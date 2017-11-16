@@ -11,12 +11,12 @@ public abstract class  Character {
 
     }
 
-    public Character(int minHp, int maxHp, int minPower, int maxPower){
-        hp = randPoints(minHp,maxHp);
-        power = randPoints(minPower,maxPower);
+    public Character(int minHp, int maxHp, int minPower, int maxPower) {
+        hp = randPoints(minHp, maxHp);
+        power = randPoints(minPower, maxPower);
     }
 
-    public int randPoints(int min, int max){
+    public int randPoints(int min, int max) {
         return  ThreadLocalRandom.current().nextInt(min, max+1);
     }
 
